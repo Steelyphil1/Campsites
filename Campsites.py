@@ -82,6 +82,7 @@ for tdssun in soupNorth.find_all('td', class_="status a sun"):
 
 MY_ADDRESS = 'INSERT EMAIL ADDRESS HERE'
 MY_PASSWORD = 'INSERT PASSWORD HERE'
+DESTINATION_ADDRESS = 'INSERT DESTINATION ADDRESS HERE'
 
 s = smtplib.SMTP(host='INSERT HOST SMTP HERE', port=INSERT HOST PORT HERE)
 s.starttls()
@@ -91,7 +92,7 @@ message = " "
 
 msg = MIMEMultipart()
 msg['From'] = MY_ADDRESS
-msg['To'] = 'phillip.bay@gmail.com'
+msg['To'] = DESTINATION_ADDRESS
 msg['Subject'] = "Campsite!"
 
 
